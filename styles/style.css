@@ -6,8 +6,9 @@ nav{
     text-align: center;
 }
 .content{
-    text-align: center;
-  
+    float: right;
+    width: 55%;
+}
 /*footer css*/
 footer{
     position: fixed;
@@ -27,4 +28,14 @@ footer{
 .f-section:hover{
     background-color: rgb(252, 140, 140); /*place holder color*/
     color: white; /*place holder color*/
+}
+
+/*image and positioning*/
+.about-image{
+	float: left;
+	width: 40%;
+}
+.about-image img{
+	width: 100%;
+	height: auto;
 }
