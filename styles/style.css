@@ -1,3 +1,4 @@
+
 nav{
     background-color: #2ee7f6;
 }
@@ -6,4 +7,24 @@ nav{
 }
 .content{
     text-align: center;
+  
+/*footer css*/
+footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(250, 193, 193); /*place holder color*/
+}
+
+.f-section{
+    margin-inline: 25px;
+    font: Helvetica Neue;
+    border-radius: 15px;
+}
+
+.f-section:hover{
+    background-color: rgb(252, 140, 140); /*place holder color*/
+    color: white; /*place holder color*/
 }
