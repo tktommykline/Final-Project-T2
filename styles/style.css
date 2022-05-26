@@ -1,3 +1,6 @@
+body{
+    padding-top: 55px;
+}
 
 nav{
     background-color: #2ee7f6;
@@ -24,12 +27,12 @@ nav{
 
 /*footer css*/
 footer{
-    position: fixed;
+    position: relative;
     width: 100%;
     bottom: 0;
     display: flex;
     justify-content: center;
-    background-color: rgb(250, 193, 193); /*place holder color*/
+    background-color: #65a5ab; /*place holder color*/
 }
 
 .f-section{
