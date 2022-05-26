@@ -6,7 +6,8 @@ nav{
     text-align: center;
 }
 .content{
-    text-align: center;
+    float: right;
+    width: 55%;
 }
 
 /*footer css*/
@@ -30,9 +31,19 @@ footer{
     color: white; /*place holder color*/
 }
 
+
 /*checkout page css*/
 
 .last-input-line{
     display: flex;
 }
 
+/*image and positioning*/
+.about-image{
+	float: left;
+	width: 40%;
+}
+.about-image img{
+	width: 100%;
+	height: auto;
+}
