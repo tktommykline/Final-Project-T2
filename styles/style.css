@@ -9,12 +9,14 @@ nav{
     float: right;
     width: 55%;
 }
+
 /* carousel */
 .carousel-home{
     margin-left: 30%;
     margin-top: 5%;
     width: 80%;
 }
+
 /* home page contents */
 .home-content{
     text-align: center;
@@ -39,6 +41,13 @@ footer{
 .f-section:hover{
     background-color: rgb(252, 140, 140); /*place holder color*/
     color: white; /*place holder color*/
+}
+
+
+/*checkout page css*/
+
+.last-input-line{
+    display: flex;
 }
 
 /*image and positioning*/
