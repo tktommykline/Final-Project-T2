@@ -10,6 +10,18 @@ nav{
     width: 55%;
 }
 
+/* carousel */
+.carousel-home{
+    margin-left: 30%;
+    margin-top: 5%;
+    width: 80%;
+}
+
+/* home page contents */
+.home-content{
+    text-align: center;
+}
+
 /*footer css*/
 footer{
     position: fixed;
