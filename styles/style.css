@@ -7,7 +7,8 @@ nav{
 }
 .content{
     text-align: center;
-  
+}
+
 /*footer css*/
 footer{
     position: fixed;
@@ -28,3 +29,10 @@ footer{
     background-color: rgb(252, 140, 140); /*place holder color*/
     color: white; /*place holder color*/
 }
+
+/*checkout page css*/
+
+.last-input-line{
+    display: flex;
+}
+
