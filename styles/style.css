@@ -95,3 +95,14 @@ footer{
     width: fit-content;
     margin-left: 200px;;
 }
+/* checkout page */
+.checkout_header{
+    text-align: center;
+    padding: 20px;
+}
+.card{
+    padding: 30px;
+    margin: 20px;
+    margin-right: 20%;
+}
+
