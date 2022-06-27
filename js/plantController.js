@@ -5,7 +5,7 @@ class PlantController {
         this.currentID = currentID;
     }
 
-    addItem(id, name, description, img, createdAt){
+    addItem(name, description, img, createdAt){
         const plantItem = {
             id: this.currentID++,
             name: name,
@@ -13,8 +13,11 @@ class PlantController {
             img: img,
             createdAt: createdAt
         };
-        this.items.push(plantItem);
+        this._items.push(plantItem);
+
+        localStorage.setItem("items", JSON.stringify(this._items));
     }
+    
     loadItemsFromLocalStorage() {
         const storageItems = localStorage.getItem("items");
         if(storageItems) {
