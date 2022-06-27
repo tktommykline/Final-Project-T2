@@ -14,22 +14,41 @@ nav{
 
 .header_content{
     text-align: center;
+    margin-left: 400px;
 }
 .content{
     float: right;
     width: 55%;
 }
+/* .about_section{
+    margin: 100px;
+    margin-left: 50%;
 
-/* carousel */
+} */
+
+/* carousel Index page */
 .carousel-home{
     margin-left: 30%;
     margin-top: 5%;
     width: 80%;
 }
-
+.carousel-control-next {
+    right: 50%;
+    bottom: 5px;
+    color: black;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    display: inline-flex;
+    width: 3rem;
+    height: 25rem;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100% 100%;
+}
 /* home page contents */
 .home-content{
     text-align: center;
+    
 }
 
 /*footer css*/
@@ -68,4 +87,11 @@ footer{
 .about-image img{
 	width: 100%;
 	height: auto;
+}
+
+/* about page button */
+.button{
+    background-color: #c2d3ba;
+    width: fit-content;
+    margin-left: 200px;;
 }
