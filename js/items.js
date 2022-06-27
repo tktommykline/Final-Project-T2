@@ -19,13 +19,14 @@ const plantController = new PlantController(0);
 
 function addItemCard(plant){
     console.log('help please');
-    const plantHtml = `<div class="card" style="width: 18rem;">
+    const plantHtml = `<div = "row"> <div class="card" style="width: 18rem;">
     <img src="${plant.img}" class="card-img-top" alt="..."/>
     <div class="card-body">
         <h5 class="card-title">${plant.name}</h5>
         <p class="card-text">${plant.description}</p>
         <a href="#" class="btn btn-primary">Get one today!</a>
     </div>
+</div>
 </div>`
 
   const plantContainer = document.querySelector('#list-items');
