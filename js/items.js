@@ -20,11 +20,11 @@ const plantController = new PlantController(0);
 function addItemCard(plant){
     console.log('help please');
     const plantHtml = `<div class="card" style="width: 18rem;">
-    <img src="..." class="card-img-top" alt="..."/>
+    <img src="${plant.img}" class="card-img-top" alt="..."/>
     <div class="card-body">
-        <h5 class="card-title"></h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <h5 class="card-title">${plant.name}</h5>
+        <p class="card-text">${plant.description}</p>
+        <a href="#" class="btn btn-primary">Get one today!</a>
     </div>
 </div>`
 
