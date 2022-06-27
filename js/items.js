@@ -22,7 +22,7 @@ function addItemCard(plant){
     const plantHtml = `<div class="card" style="width: 18rem;">
     <img src="..." class="card-img-top" alt="..."/>
     <div class="card-body">
-        <h5 class="card-title">Card title</h5>
+        <h5 class="card-title"></h5>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         <a href="#" class="btn btn-primary">Go somewhere</a>
     </div>
@@ -32,4 +32,23 @@ function addItemCard(plant){
   plantContainer.innerHTML += plantHtml;
 }
 
-addItemCard();
+
+//storage function 
+function localStorageSampleData() {
+  if(!localStorage.getItem("items")){
+    const sampleItems = [{'name': 'Phildendron Mican', 'description': 'Velvet leaf phildendron', 'img':'images/Mican_angle1.jpg'},{'name': 'Heartleaf Phildendron', 'description': ' Dark green heart-shaped leaves', 'img':'images/Philo_hederaceum_angle1.jpg'}]
+    localStorage.setItem("items", JSON.stringify(sampleItems));
+  }
+}
+
+function loadListFromPlantController() {
+  for(let i = 0; i < plantController._items.length; i++) {
+    const item = plantController._items[i];
+    addItemCard(item);
+  }
+}
+
+
+localStorageSampleData();
+plantController.loadItemsFromLocalStorage();
+loadListFromPlantController();
