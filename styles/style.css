@@ -32,8 +32,8 @@ nav{
     margin-top: 5%;
     width: 80%;
 }
-.carousel-control-next {
-    right: 50%;
+.carousel-control-next {    /*changes the next button*/
+    right: 50%;  
     bottom: 5px;
     color: black;
 }
@@ -93,7 +93,8 @@ footer{
 .button{
     background-color: #c2d3ba;
     width: fit-content;
-    margin-left: 200px;;
+    margin-left: 200px;
+    border-radius: 10px;
 }
 /* checkout page */
 .checkout_header{
