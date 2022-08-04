@@ -18,7 +18,6 @@ const plantController = new PlantController(0);
 // }
 
 function addItemCard(plant){
-    console.log('help please');
     const plantHtml = `<div = "row"> <div class="card" style="width: 15rem;">
     <img src="${plant.img}" class="card-img-top" alt="..."/>
     <div class="card-body">
