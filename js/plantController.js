@@ -4,7 +4,7 @@ class PlantController {
         this._items = [];
         this.currentID = currentID;
     }
-    
+
     addItem(name, description, imageUrl, createdAt){
         const plantItem = {
             id: this.currentID++,
@@ -15,7 +15,12 @@ class PlantController {
         };
         this._items.push(plantItem);
         localStorage.setItem("items", JSON.stringify(this._items));
-        this.save({name, description, imageUrl});
+
+        //let id = this.id;
+        //this.save({name, description, imageUrl});
+        //this.delete();
+        let id = 4;
+        this.update({id, name, description, imageUrl});
     }
 
     save({name, description, imageUrl}){
@@ -38,18 +43,19 @@ class PlantController {
         });
     }
 
-    update({name,  description, imageUrl}){
-        fetch('http://localhost:8080/plant')
-        method = 'PUT';
-        body = JSON.stringify({
-            name: this.name,
-            description: this.description,
-            imageUrl: this.imageUrl,
-            id: this.id
-        }),
-        headers = {
+    update({id, name,  description, imageUrl}){
+
+        const data = {id, name, description, imageUrl};
+
+        console.log(data);
+
+        fetch('http://localhost:8080/plant/' + id, {
+        method: 'PUT',
+        body: JSON.stringify(data),
+        headers: {
             'Content-Type': 'application/json; charset=UTF-8'
         }
+    })
         .then(response => response.json())
         .then(data => {
         console.log('Success:', data);
@@ -59,13 +65,20 @@ class PlantController {
         });
     }
 
-    findItemById({name, description, imageUrl}){
-
+    findItemById(id){
+        fetch('http://localhost:8080/plant/' + id)
+        .then(response => response.json())
+        .then(data => {
+        console.log('Success:', data);
+        })
+        .catch((error) => {
+        console.error('Error:', error);
+        });
     }
 
-    delete({name, description, imageUrl}){
-        fetch('http://localhost:8080/plant')
-        method = 'delete';
+    delete(id){
+        fetch('http://localhost:8080/plant/' + id, 
+        { method: 'DELETE' })
     }
 }
 
