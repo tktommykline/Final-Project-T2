@@ -15,11 +15,11 @@ newItemForm.addEventListener('submit', (event) =>{
 
     const name = itemName.value;
     const description = itemDescription.value;
-    const image = itemImg.value;
+    const imageUrl = itemImg.value;
 
-    console.log(name, description, image);
+    //console.log(name, description, imageUrl);
 
-    plantController.addItem(name, description, image);
+    plantController.addItem(name, description, imageUrl);
 
     itemName.value = '';
     itemDescription.value = '';
